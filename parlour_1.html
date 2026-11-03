@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saree Parlour</title>
+    <style>
+        body {
+            /* Full-screen background image with a dark overlay for text readability */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('WhatsApp Image 2026-11-02 at 10.20.06 PM.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #800020; /* Burgundy accent */
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .saree-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+        }
+
+        .saree-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .saree-card img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .intro-text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro-text h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #d4af37;
+        }
+
+    </style>
+</head>
+<body>
+<main id="collection">
+        <div class="intro-text">
+            <h1>20% off</h1>
+            <h2>each of<br>₹̶1̶,̶4̶0̶0̶<br>₹1,120</h2>
+        </div>
+    <div class="gallery-container">
+        <!-- Saree Image 1 -->
+        <div class="saree-card">
+            <img src="1000.3.jpg" alt="Banarasi Silk Saree">
+        </div>
+
+        <!-- Saree Image 2 -->
+        <div class="saree-card">
+            <img src="1000.2.jpg" alt="Designer Kanjeevaram Saree">
+        </div>
+
+        <!-- Saree Image 3 -->
+        <div class="saree-card">
+            <img src="1000.jpg" alt="Elegant Cotton Saree">
+        </div>
+        <div class="saree-card">
+            <img src="1000.1.jpg" alt="Elegant Cotton Saree">
+        </div>
+        <div class="saree-card">
+            <img src="sa-1.jpg" alt="Elegant Cotton Saree">
+        </div>
+        <div class="saree-card">
+            <img src="sa-2.jpg" alt="Elegant Cotton Saree">
+        </div>
+        <div class="saree-card">
+            <img src="s-1.jpg" alt="Elegant Cotton Saree">
+        </div>
+        <div class="saree-card">
+            <img src="s-2.jpg" alt="Elegant Cotton Saree">
+        </div>
+         <div class="saree-card">
+            <img src="s-3.jpg" alt="Elegant Cotton Saree">
+        </div>
+    </div>
+</body>
+</html>

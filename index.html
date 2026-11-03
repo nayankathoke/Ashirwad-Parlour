@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashirwad Parlour - Premium Saree Collection</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            /* Full-screen background image with a dark overlay for text readability */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('WhatsApp Image 2026-11-02 at 10.20.06 PM.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(43, 5, 23, 0.9); /* Deep maroon traditional theme */
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3px solid #d642bb; /* Gold accent */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-color: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #2b0517;
+            font-size: 24px;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+
+        .parlour-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #d4af37;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d642bb;
+        }
+
+        /* Main Content & Gallery Styles */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .intro-text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro-text h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #d4af37;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 10px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid #d642bb;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px #d642bb;
+            border-color: #d642bb;
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-info {
+            padding: 15px;
+            background-color: rgba(43, 5, 23, 0.85);
+            text-align: center;
+            border-top: 2px solid #d4af37;
+        }
+
+        .card-info h2 {
+            font-size: 18px;
+            color: #d4af37;
+            margin-bottom: 5px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgba(20, 2, 10, 0.95);
+            border-top: 3px solid #d642bb;
+            padding: 20px 30px;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-info {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+        }
+
+        .info-item span class="icon" {
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-info {
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section with Logo and Name -->
+    <header>
+        <div class="header-brand">
+            <!-- Dynamic placeholder for logo initials, can be replaced with an <img> tag -->
+            <img src="logo.jpeg" alt="Company Logo" height="50">
+            <h1 class="parlour-name">Ashirwad Parlour</h1>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="collection">
+        <div class="intro-text">
+            <h2>Exclusive Saree Collection</h2>
+        </div>
+
+        <!-- Saree Images Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Saree 1 -->
+            <div class="card">
+                <a href="parlour_1.html">
+                <img src="1000_.jpg" alt="Saree">
+                <div class="card-info">
+                    <h2>20% off</h2>
+                </div>
+                </a>
+            </div>
+
+            <!-- Saree 2 -->
+            <div class="gallery-grid">
+            <!-- Saree 1 -->
+            <div class="card">
+                <a href="parlour.html">
+                <img src="image_1118913c.jpg" alt="Saree">
+                <div class="card-info">
+                    <h2>20% off</h2>
+                </div>
+                </a>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section with Location and Phone Number -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="info-item">
+                    <strong style="color: #d4af37;">📍 Location:</strong> 
+                    <span>Near Hanuman Mandir,
+                        Shivnagar,
+                        Ramtek.</span>
+                </div>
+                <div class="info-item">
+                    <strong style="color: #d4af37;">📞 Phone:</strong> 
+                    <span>+91 98818 59188</span>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Ashirwad Parlour. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
